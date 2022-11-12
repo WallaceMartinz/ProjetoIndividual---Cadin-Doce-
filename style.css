@@ -1,9 +1,11 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;    
 }
 .banner{
+    display: flex;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0)),url(img/bannernew.jpg);
@@ -11,15 +13,14 @@
     background-position: center;
 }
 .navbar{
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: absolute;
 }
 .logo{
-    width: 220px;
     cursor: pointer;
 }
 .navbar ul li{
@@ -27,14 +28,13 @@
     display: inline-block;
     margin: 0 20px;
     position: relative;
-    
 }
 
 .navbar ul li a{
     text-decoration: none;
-    color: #8C7206;
+    color: black;
     text-transform: uppercase;
-    font-family: 'blutter';
+    font-family: 'Roboto';
 }
 .navbar ul li::after{
     content: '';
@@ -45,26 +45,94 @@
     left: 0;
     bottom: -5px;
     transition: 0.5s;
-
-    
 }
 .navbar ul li:hover::after{
     width: 100%;
 }
 .title{
-    top: 30%;
-    left: 13%;
+    top: 23%;
+    left: 12%;
     color: #8C7206;
     position: absolute;
     font-size: 60px;
     font-family: 'Adelia';
-    
+    text-shadow: 0 5px 15px rgba(0,0,0, .4);
+}
+
+
+.texto-centro{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin:auto;
+    padding: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 15px rgba(0,0,0, .5);
+    overflow: hidden;
+    color: #000;
     
 }
 
+
+.texto-centro p{
+    
+    overflow: hidden;
+    position: relative;
+    line-height: 20px;
+    font-family: 'Roboto-p';
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+.Saiba-mais{
+    background-color: transparent;
+    border: #8C7206 solid 1px;
+    width: 180px;
+    height: 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 18px;
+    font-family: 'Roboto';
+    margin-top: 20px;
+    font-weight: 700;
+    color: #8C7206;
+    overflow: hidden;
+    box-shadow: 0 0 0 #8C7206,
+                0 0 0 #8C7206;
+    transition: all 0.25s ease-in-out;  
+}
+button:hover{
+    box-shadow: 14px 14px 0 #8C7206,
+                -14px -14px 0 #8C7206;
+    letter-spacing: 1px;
+    border: transparent  1px;
+}
+
+button p{
+    position: relative;
+    z-index: 2;
+    color: #8C7206;
+}
+    
+ .container{
+     display: flex;
+     margin: auto;
+     width: 100%;
+     margin-top: 300px;
+     
+}
+
+
 @font-face {
-    font-family: 'blutter';
-    src: url(fonts/Butler/Butler_Light.otf);
     font-family: 'Adelia';
     src: url(fonts/adelia.otf);
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: 'Roboto-p';
+    src: url(fonts/RobotoCondensed-LightItalic.ttf);
 }
