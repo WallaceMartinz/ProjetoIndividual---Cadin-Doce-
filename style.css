@@ -2,13 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;    
 }
 .banner{
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0)),url(img/bannernew.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(100, 100, 100, 0.1),rgba(119, 119, 119, 0.13),rgba(167, 167, 167, 0),rgb(255, 255, 255)),url(img/bannernew.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -29,7 +28,6 @@
     margin: 0 20px;
     position: relative;
 }
-
 .navbar ul li a{
     text-decoration: none;
     color: black;
@@ -58,8 +56,6 @@
     font-family: 'Adelia';
     text-shadow: 0 5px 15px rgba(0,0,0, .4);
 }
-
-
 .texto-centro{
     display: flex;
     flex-direction: column;
@@ -70,12 +66,10 @@
     box-shadow: 0 5px 15px rgba(0,0,0, .5);
     overflow: hidden;
     color: #000;
+    background-color: rgba(0,0,0, 0.15);
     
 }
-
-
 .texto-centro p{
-    
     overflow: hidden;
     position: relative;
     line-height: 20px;
@@ -89,7 +83,6 @@
     border: #8C7206 solid 1px;
     width: 180px;
     height: 40px;
-    border-radius: 2px;
     cursor: pointer;
     align-self: flex-end;
     font-size: 18px;
@@ -101,27 +94,156 @@
     box-shadow: 0 0 0 #8C7206,
                 0 0 0 #8C7206;
     transition: all 0.25s ease-in-out;  
+    text-decoration: none;
 }
-button:hover{
-    box-shadow: 14px 14px 0 #8C7206,
-                -14px -14px 0 #8C7206;
-    letter-spacing: 1px;
+.Saiba-mais a{
+    text-decoration: none;
+    color: #8C7206;
+}
+.Saiba-mais:hover{
+    box-shadow: 3px 3px 0 #8C7206,
+                -3px -3px 0 #8C7206;
+    letter-spacing: 0.5px;
     border: transparent  1px;
 }
-
-button p{
+.Saiba-mais p{
     position: relative;
     z-index: 2;
     color: #8C7206;
 }
-    
- .container{
+.container-texto{
      display: flex;
      margin: auto;
      width: 100%;
      margin-top: 300px;
-     
 }
+.main{
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 70%;
+    font-family: 'Roboto';
+    box-shadow: 0 10px 15px rgba(0,0,0, .5);
+    
+}
+.main img{
+    width: 350px;
+}
+.titulo-historia{
+    text-indent: 35px;
+    /* text-align: center; */
+    font-family: 'Roboto';
+    margin: auto;
+    padding: 10px;
+    font-size: 28px;
+    text-shadow: 0 5px 15px rgba(0,0,0, .1);
+}
+.main-historia-right{
+    display: table;
+    margin: auto;
+    margin-top: 25px;
+    text-indent: 15px;
+    justify-content: space-evenly;
+    
+}
+.img-historia-right{
+    display: table-cell;
+    float: right;
+}
+.content-historia-right{
+    display: table-cell;
+    float: left;
+    margin-right: 20px;
+    max-width: 540px;
+    text-align: justify;
+    
+}
+.main-historia-left{
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+    text-indent: 15px;
+    justify-content: space-evenly;
+    
+}
+.img-historia-left{
+    display: table-cell;
+    float: left;
+}
+.content-historia-left{
+    display: table-cell;
+    float: right;
+    margin-left: 20px;
+    max-width: 540px;
+    text-align: justify;
+}
+.receitas {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    /* border: red 3px solid; */
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+.receitas .container-receitas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    height: 900px;
+    /* border: blue 3px solid; */
+
+}
+.title-card{
+    text-align: center;
+    height: 100px;
+    width: 80%;
+    /* border: #000 3px solid; */
+    font-family: 'Roboto';
+    margin: auto;
+    padding: 10px;
+}
+.title-card h2{
+    font-size: 38px;
+    text-shadow: 0 5px 15px rgba(0,0,0, .1);
+}
+.card-receitas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 400px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 23px rgba(0, 0, 0, 0.233);
+}
+.top-card{
+    padding: 10px;
+    padding-top: 5px;
+}
+.media-card{
+    background: url(img/chambelland_sa_janv2018_tarteauxpommes-feb20-studio-artichau.webp) center/cover;
+    width: 400px;
+    height: 200px;
+}
+.bottom-card{
+    padding: 10px;
+}
+.actions{
+    background: none;
+    border: none;
+    color: #8C7206;
+}
+
+
+
+
 
 
 @font-face {
