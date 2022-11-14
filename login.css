@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: url(img/bannernew.jpg);
+    
+    background-size: cover;
+    font-family: 'Roboto';
+    
+}
+
+.title{
+    text-align: start;
+    padding: 50px 0 20px;
+
+}
+.title h1{
+    margin: 0 30px;
+    padding: 0;
+    color: black;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'Roboto';
+
+}
+.container{
+    
+    width: 70%;
+    height: 500px;
+    background: white;
+    margin:  auto;
+    margin-top: 60px;
+    /* border: 2px solid #fff; */
+    box-shadow:  0 15px 40px rgba(0,0,0,.5);
+}
+.container .left{
+    margin: 0;
+    float: left;
+    width: 50%;
+    height: 500px;
+    background: url(img/1boulangerie.webp);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.container .right{
+    float: right;
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.form-box{
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    height: 500px;
+    
+}
+.form-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+
+
+}
+.form-box input{
+    width: 80%;
+    margin-bottom: 20px;
+
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"]
+{
+    border: none;
+    border-bottom:  1px solid black;
+    outline: none;
+}
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus
+{
+    border-bottom:  1px solid #8C7206;
+}
+
+.form-box input[type="submit"]{
+    border: none;
+    height: 40px;
+    width: 50%;
+    background: #262626;
+    cursor: pointer;
+    color: white;
+}
+.form-box input[type="submit"]:hover{
+    background: #8C7206;
+}
+.form-box a{
+    color: #262626;
+    font-size: 14px;
+}
+
+
+
+
+@font-face {
+    font-family: 'Adelia';
+    src: url(fonts/adelia.otf);
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: 'Roboto-p';
+    src: url(fonts/RobotoCondensed-LightItalic.ttf);
+}
