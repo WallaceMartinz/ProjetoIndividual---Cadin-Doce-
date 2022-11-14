@@ -7,21 +7,35 @@
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(100, 100, 100, 0.1),rgba(119, 119, 119, 0.13),rgba(167, 167, 167, 0),rgb(255, 255, 255)),url(img/bannernew.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.05),rgba(100, 100, 100, 0.1),rgba(119, 119, 119, 0.13),rgba(167, 167, 167, 0),rgb(255, 255, 255)),url(img/bannernew.jpg);
     background-size: cover;
     background-position: center;
 }
 .navbar{
     width: 100%;
     margin: auto;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.010),rgba(255, 255, 255, 0.01));
+    backdrop-filter: blur(3px);
+    z-index: 3;
+    
 }
-.logo{
+.navbar h3{
+    font-family: 'Adelia';
+    font-size: 26px;
+    text-transform: capitalize; 
+    color: black;
+    text-shadow: 0 5px 15px rgba(0,0,0, .4);
     cursor: pointer;
 }
+/* .logo{
+    cursor: pointer;
+} */
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -47,10 +61,11 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+
 .title{
     top: 23%;
     left: 12%;
-    color: #8C7206;
+    color: #402218;
     position: absolute;
     font-size: 60px;
     font-family: 'Adelia';
@@ -59,14 +74,15 @@
 .texto-centro{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
     margin:auto;
     padding: 10px;
     justify-content: space-evenly;
     box-shadow: 0 5px 15px rgba(0,0,0, .5);
     overflow: hidden;
     color: #000;
-    background-color: rgba(0,0,0, 0.15);
+    background-color: rgba(0, 0, 0, 0.062);
+    backdrop-filter: blur(3px);
     
 }
 .texto-centro p{
@@ -80,7 +96,7 @@
 }
 .Saiba-mais{
     background-color: transparent;
-    border: #8C7206 solid 1px;
+    border: #402218 solid 1px;
     width: 180px;
     height: 40px;
     cursor: pointer;
@@ -89,27 +105,27 @@
     font-family: 'Roboto';
     margin-top: 20px;
     font-weight: 700;
-    color: #8C7206;
+    color: #402218;
     overflow: hidden;
-    box-shadow: 0 0 0 #8C7206,
-                0 0 0 #8C7206;
+    box-shadow: 0 0 0 #402218,
+                0 0 0 #402218;
     transition: all 0.25s ease-in-out;  
     text-decoration: none;
 }
 .Saiba-mais a{
     text-decoration: none;
-    color: #8C7206;
+    color: #402218;
 }
 .Saiba-mais:hover{
-    box-shadow: 3px 3px 0 #8C7206,
-                -3px -3px 0 #8C7206;
+    box-shadow: 2px 2px 0 #402218,
+                -2px -2px 0 #402218;
     letter-spacing: 0.5px;
-    border: transparent  1px;
+    border: transparent  ;
 }
 .Saiba-mais p{
     position: relative;
     z-index: 2;
-    color: #8C7206;
+    color: #402218;
 }
 .container-texto{
      display: flex;
@@ -125,7 +141,6 @@
     width: 70%;
     font-family: 'Roboto';
     box-shadow: 0 10px 15px rgba(0,0,0, .5);
-    
 }
 .main img{
     width: 350px;
@@ -212,6 +227,7 @@
 .title-card h2{
     font-size: 38px;
     text-shadow: 0 5px 15px rgba(0,0,0, .1);
+    
 }
 .card-receitas{
     display: flex;
@@ -221,11 +237,13 @@
     height: 320px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 23px rgba(0, 0, 0, 0.233);
+    /* box-shadow: 0 2px 23px rgba(0, 0, 0, 0.233); */
+    box-shadow: 0 10px 15px rgba(0,0,0, .5);
 }
 .top-card{
     padding: 10px;
     padding-top: 5px;
+    font-family: 'Roboto';
 }
 .media-card{
     background: url(img/chambelland_sa_janv2018_tarteauxpommes-feb20-studio-artichau.webp) center/cover;
@@ -234,14 +252,13 @@
 }
 .bottom-card{
     padding: 10px;
+    font-family: 'Roboto';
 }
 .actions{
     background: none;
     border: none;
     color: #8C7206;
 }
-
-
 footer{
     background-color: beige;
     height: auto;
@@ -262,6 +279,7 @@ footer{
     font-size: 26px;
     text-transform: capitalize; 
     margin-bottom: 30px;  
+    
 }
 .footer-container p{
     max-width: 700px;

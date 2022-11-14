@@ -1,12 +1,63 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
     background: url(img/bannernew.jpg);
     background-size: cover;
     font-family: 'Roboto';
+   
+}
+
+.navbar{
+    width: 100%;
+    /* padding-bottom: 290px; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    /* position: fixed; */
+    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.010),rgba(255, 255, 255, 0.01));
+    backdrop-filter: blur(3px);
+    z-index: 3;
     
+}
+.navbar h3 a{
+    font-family: 'Adelia';
+    font-size: 26px;
+    text-transform: capitalize; 
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 5px 15px rgba(0,0,0, .4);
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+.navbar ul li::after{
+    content: '';
+    height: 1px;
+    width: 0%;
+    background: #8C7206;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }
 
 .title{
@@ -24,7 +75,7 @@ body{
 
 }
 .container{
-    
+    display: flex;
     width: 70%;
     height: 500px;
     background: white;
